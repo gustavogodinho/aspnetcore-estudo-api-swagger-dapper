@@ -24,7 +24,11 @@ namespace APIIndicadores.Controllers
                     "SELECT * FROM dbo.Indicadores");
             }
         }
-
+        /// <summary>
+        /// Método para buscar uma Indicador
+        /// </summary>
+        /// <param name="indicador">Cod do Indicador</param>
+        /// <returns></returns>
         [HttpGet("{indicador}")]
         [ApiConventionMethod(typeof(DefaultApiConventions), nameof(DefaultApiConventions.Get))]
         public ActionResult<Indicador> Get(
