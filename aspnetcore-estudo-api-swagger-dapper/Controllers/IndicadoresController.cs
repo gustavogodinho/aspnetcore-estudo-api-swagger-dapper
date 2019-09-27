@@ -18,7 +18,7 @@ namespace APIIndicadores.Controllers
             [FromServices]IConfiguration configuration)
         {
             using (SqlConnection conexao = new SqlConnection(
-                configuration.GetConnectionString("BaseIndicadores")))
+                configuration.GetConnectionString("Context")))
             {
                 return conexao.Query<Indicador>(
                     "SELECT * FROM dbo.Indicadores");
@@ -34,7 +34,7 @@ namespace APIIndicadores.Controllers
             Indicador resultado = null;
 
             using (SqlConnection conexao = new SqlConnection(
-                configuration.GetConnectionString("BaseIndicadores")))
+                configuration.GetConnectionString("Context")))
             {
                 resultado = conexao.QueryFirstOrDefault<Indicador>(
                     "SELECT * FROM dbo.Indicadores " +

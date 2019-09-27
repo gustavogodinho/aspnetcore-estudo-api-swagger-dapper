@@ -25,7 +25,7 @@ namespace APIIndicadores
                 c.SwaggerDoc("v1",
                     new Info
                     {
-                        Title = "Minha primeira Api Swagger",
+                        Title = "Minha API Swagger",
                         Version = "v1",
                         Description = "Estudo de API REST criada com o ASP.NET Core 2.2 para consulta a indicadores econômicos",
                         Contact = new Contact

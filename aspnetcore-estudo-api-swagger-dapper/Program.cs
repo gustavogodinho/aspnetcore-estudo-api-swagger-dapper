@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
-namespace aspnetcore_estudo_api_swagger_dapper
+namespace APIIndicadores
 {
     public class Program
     {
